@@ -1,0 +1,65 @@
+[0823/060327.736:ERROR:process_reader_win.cc(127)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0823/060328.309:ERROR:exception_snapshot_win.cc(99)] thread ID 64540 not found in process
+[0823/060328.353:ERROR:process_info.cc(617)] range at 0x0, size 0x28 fully unreadable
+[0823/060328.353:ERROR:process_info.cc(617)] range at 0x0, size 0x28 fully unreadable
+[0825/040602.672:ERROR:session_end_watcher.cc(209)] PostMessage: Not enough quota is available to process this command. (0x718)
+[0825/040602.315:ERROR:process_reader_win.cc(127)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0825/040603.747:ERROR:exception_snapshot_win.cc(99)] thread ID 34504 not found in process
+[0825/040602.153:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0825/040603.748:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0825/040603.748:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0825/040602.183:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.748:ERROR:exception_snapshot_win.cc(99)] thread ID 34556 not found in process
+[0825/040603.749:ERROR:process_memory_win.cc(73)] ReadMemory at 0x478c8eeb00 of 16 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0825/040603.749:ERROR:exception_snapshot_win.cc(210)] EXCEPTION_POINTERS read failed
+[0825/040603.749:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0825/040602.417:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0825/040603.749:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0825/040603.749:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0825/040602.433:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.749:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.749:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.749:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.749:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.749:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.749:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.749:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.749:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.750:ERROR:exception_snapshot_win.cc(99)] thread ID 34532 not found in process
+[0825/040602.183:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040602.153:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0825/040603.750:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0825/040603.750:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0825/040602.153:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0825/040603.750:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0825/040603.750:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0825/040603.750:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.750:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0825/040603.750:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:exception_snapshot_win.cc(99)] thread ID 8608 not found in process
+[0825/040602.294:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.751:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.752:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.752:ERROR:process_reader_win.cc(155)] SuspendThread: Access is denied. (0x5)
+[0825/040603.752:ERROR:exception_snapshot_win.cc(99)] thread ID 34552 not found in process
+[0825/040602.438:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0825/040603.752:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0825/040603.752:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0825/040603.850:ERROR:process_memory_win.cc(73)] ReadMemory at 0x5199bbf400 of 1232 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0825/040603.850:ERROR:exception_snapshot_win.cc(284)] ContextRecord
+[0825/040603.850:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
