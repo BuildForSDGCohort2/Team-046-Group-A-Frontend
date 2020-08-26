@@ -17,7 +17,7 @@ class Login extends Component {
       email: this.state.email,
       password: this.state.password
     }
-    axios.post('/login', {
+    axios.post('https://farmconnect-backend.herokuapp.com/login', {
             email: user.email,
             password: user.password
         })
@@ -65,7 +65,7 @@ class Login extends Component {
 
             <button type="submit" class="btn btn-outline-primary btn-block"><i className='fa fa-sign-in-alt'/>{' '}Sign In</button>
       </form>
-      
+
 
 
 

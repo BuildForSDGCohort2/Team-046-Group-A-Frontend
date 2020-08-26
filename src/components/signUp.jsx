@@ -61,7 +61,7 @@ class signUp extends Component {
            status:'Passwords do not match'
          })
        }else{
-         axios.post('/signup',user)
+         axios.post('https://farmconnect-backend.herokuapp.com/signup',user)
           .then(res=>{
             res.data.error ?
             this.setState({status:res.data.error})
