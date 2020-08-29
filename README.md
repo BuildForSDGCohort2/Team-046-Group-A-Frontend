@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d70b2e33636d476ea6dedd41633f06e2)](https://app.codacy.com/gh/BuildForSDGCohort2/Team-046-Group-A-Frontend?utm_source=github.com&utm_medium=referral&utm_content=BuildForSDGCohort2/Team-046-Group-A-Frontend&utm_campaign=Badge_Grade_Settings)
+
 In the project directory, you can run:
 
 ### `npm start`
