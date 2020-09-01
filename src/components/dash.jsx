@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import kR from '../unnamed.jpg'
 import jwt_decode from 'jwt-decode'
-import './script'
 class Dash extends Component {
   render() {
     const decode = jwt_decode(localStorage.token)

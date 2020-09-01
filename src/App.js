@@ -7,6 +7,7 @@ import Login from './components/login'
 import Home from './components/home'
 import Topbar from './components/topbar'
 import  Dash from './components/dash'
+import Landing from './components/landing'
 import 'jquery/dist/jquery.min.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
@@ -15,7 +16,8 @@ import 'tailwindcss/dist/components.min.css'
 import 'tailwindcss/dist/utilities.min.css'
 import 'tailwindcss/dist/tailwind.min.css'
 import ChatPage from './components/chatPage'
-
+import jwt_decode from 'jwt-decode'
+import Uploads from './components/uploads'
 class App extends Component {
   UNSAFE_componentWillMount() {
     axios.interceptors.request.use(function (config) {
@@ -25,20 +27,22 @@ class App extends Component {
       return config;
     });
     axios.defaults.headers.common['Authorization'] = localStorage.token
-    console.log(localStorage)
-  // localStorage.removeItem('token')
       }
 
   render() {
+    const decode = !localStorage.token ? '' : jwt_decode(localStorage.token)
     const loginRoutes = (
 
           <Switch>
-          <Route exact path='/' component={Login}/>
-          <Route path='/signUp' component={SignUp}/>
+          <Route exact path='/' component={Landing}/>
+          <Route exact path='/farmer_login' component={Login}/>
+          <Route path='/farmer_signUp' component={SignUp}/>
+          <Route exact path='/consumer_login' component={Login}/>
+          <Route path='/consumer_signUp' component={SignUp}/>
 
           </Switch>
     )
-    const userRoutes = (
+    const farmerRoutes = (
       <div class='flex h-screen bg-gray-100 font-sans'>
       <Navbar />
       <div class='flex flex-row flex-wrap flex-1 flex-grow content-start pl-16'>
@@ -46,7 +50,19 @@ class App extends Component {
       <Dash/>
       <Switch>
       <Route exact path='/' component={Home}/>
+      <Route exact path='/uploads' component={Uploads}/>
       <Route exact path='/chat' component={ChatPage}/>
+    </Switch>
+    </div>
+    </div>
+    )
+    const consumerRoutes = (
+      <div class='flex h-screen bg-gray-100 font-sans'>
+      <Navbar />
+      <div class='flex flex-row flex-wrap flex-1 flex-grow content-start pl-16'>
+      <Topbar/>
+      <Dash/>
+      <Switch>
     </Switch>
     </div>
     </div>
@@ -56,7 +72,7 @@ class App extends Component {
         <div >
 
           <Switch>
-          {localStorage.token ? userRoutes : loginRoutes}
+          {localStorage.token ? (decode.type==='farmer' ? farmerRoutes : consumerRoutes) : loginRoutes}
           </Switch>
         </div>
       </Router>

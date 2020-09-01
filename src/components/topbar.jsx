@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import kR from '../unnamed.jpg'
 import jwt_decode from 'jwt-decode'
-import './script'
 import { Link } from 'react-router-dom'
 class Topbar extends Component {
   logOut=(e)=>{
@@ -44,19 +43,15 @@ class Topbar extends Component {
                 <div class="flex relative inline-block pr-6">
 
                     <div class="relative text-sm">
-                        <button id="userButton" class="flex items-center focus:outline-none mr-3">
-                            <img class="w-8 h-8 rounded-full mr-4" src={kR} alt="Avatar of User"/> <span class="hidden md:inline-block"><Link onClick={this.logOut} class="px-4 py-2 block text-gray-900 hover:bg-indigo-400 hover:text-white no-underline hover:no-underline"><i class='fa fa-sign-out-alt fa-fw'/>{' '}Logout</Link>
+                    <div class="dropdown dropleft">
+  <button id="userButton" class="flex items-center focus:outline-none mr-3" data-toggle="dropdown">
+    <img class="w-8 h-8 rounded-full mr-4" src={kR} alt="Avatar of User"/>
+  </button>
+  <div class="dropdown-menu">
+    <Link onClick={this.logOut} class="px-4 py-2 block text-gray-900 hover:bg-indigo-400 hover:text-white no-underline hover:no-underline"><i class='fa fa-sign-out-alt fa-fw'/>{' '}Logout</Link>
+  </div>
+</div>
 
-                            </span>
-                        </button>
-                        <div id="userMenu" class="bg-white nunito rounded shadow-md mt-2 absolute mt-12 top-0 float-right right-0 min-w-full overflow-auto z-30 invisible">
-                            <ul class="list-reset">
-                                <li>
-                                    <hr class="border-t mx-2 border-gray-400"/>
-                                </li>
-                                <li><Link onClick={this.logOut} class="px-4 py-2 block text-gray-900 hover:bg-indigo-400 hover:text-white no-underline hover:no-underline"><i class='fa fa-sign-out-alt fa-fw'/>{' '}Logout</Link></li>
-                            </ul>
-                        </div>
                     </div>
 
                 </div>

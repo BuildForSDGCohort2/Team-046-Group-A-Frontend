@@ -1,38 +1,43 @@
-import {Get_Chat,
-Add_Chat,
-Delete_Chat,
+import {GetPosts,
+AddPost,
+DeletePost,
 Loading,
-Update_Chat
+Bill_Detail,
+UpdatePost
 } from '../actions/types'
 
 const initialState = {
-    chats:[],
-    loading:false
+    posts:[],
+    loading:false,
+    msg:'',
+    error:''
 }
 
 export default function(state= initialState, action) {
     switch (action.type) {
-      case Get_Chat:
+      case GetPosts:
         return {
           ...state,
-          chats: action.payload,
+          posts: action.payload,
           loading: false
         };
 
-      case Delete_Chat:
+      case DeletePost:
         return {
           ...state,
-          chats: state.chats.filter(student => student._id !== action.payload)
+          posts: state.posts.filter(posts => posts._id !== action.payload)
         };
-      case Add_Chat:
+      case AddPost:
         return {
           ...state,
-          chats: [action.payload,...state.chats]
+          posts: [action.payload, ...state.posts],
+          msg: action.msg,
+          error:action.error
         };
-      case Update_Chat:
+      case UpdatePost:
         return{
           ...state,
-          chats:[action.payload]
+          posts:[...state.posts]
         }
       case Loading:
         return {
