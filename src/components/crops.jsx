@@ -1,4 +1,5 @@
 export const Crops = [
+    {name:'none'},
     {name:'Beans'},
     {name:'Rice'},
     {name:'Sesame (BeniSeed)'},
@@ -40,3 +41,15 @@ export const Crops = [
     {name:'Banana'},
     {name:'Vegetable Leafs'}
   ]
+
+export const Animals = [
+  {name:'none'},
+  {name:'Cow'},
+  {name:'Ram'},
+  {name:'Goat'},
+  {name:'Sheep'},
+  {name:'Broilers'},
+  {name:'Layers'},
+  {name:'Cockerel'},
+  {name:'Horse'}
+]

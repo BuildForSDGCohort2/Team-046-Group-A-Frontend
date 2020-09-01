@@ -1,20 +1,20 @@
 import {
 Loading,
-Student_Detail,
+PostDetail
 } from '../actions/types'
 
 const initialState = {
-    student:'',
+    post:'',
     loading:false
 }
 
 export default function(state= initialState, action) {
     switch (action.type) {
 
-      case Student_Detail:
+      case PostDetail:
         return {
           ...state,
-          student:action.payload,
+          post:action.payload,
           loading: false
         };
       case Loading:
