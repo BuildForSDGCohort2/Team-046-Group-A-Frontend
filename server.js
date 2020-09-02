@@ -3,10 +3,7 @@ const compression = require('compression')
 const morgan = require('morgan')
 const path = require('path')
 const express = require('express')
-const normalizePort =port => {
-  parseInt(port, 10)
-}
-const port = normalizePort(process.env.PORT || 4000)
+const port = process.env.PORT || 4000
 const app = express()
 const dev = app.get('env') !== 'production'
 
