@@ -10,10 +10,14 @@
     "bootstrap": "^4.5.2",
     "chart.js": "^2.9.3",
     "classnames": "^2.2.6",
+    "compression": "*",
     "emoji-mart": "^3.0.0",
+    "express": "*",
     "history": "^5.0.0",
+    "http-proxy-middleware": "^1.0.5",
     "jquery": "^3.5.1",
     "jwt-decode": "^2.2.0",
+    "morgan": "*",
     "node-sass": "^4.14.1",
     "perfect-scrollbar": "^1.5.0",
     "popper.js": "^1.16.1",
@@ -36,10 +40,7 @@
     "redux-saga": "^1.1.3",
     "redux-thunk": "^2.3.0",
     "routes.js": "0.0.1",
-    "tailwindcss": "^1.7.3",
-    "morgan":"*",
-    "compression":"*",
-    "express":"*"
+    "tailwindcss": "^1.7.3"
   },
   "scripts": {
     "start": "react-scripts start",
