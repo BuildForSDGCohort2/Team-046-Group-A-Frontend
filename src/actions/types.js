@@ -1,0 +1,6 @@
+export const GetPosts = 'GetPosts'
+export const AddPost = 'AddPost'
+export const PostDetail = 'PostDetail'
+export const UpdatePost = 'UpdatePost'
+export const DeletePost = 'DeletePost'
+export const Loading = 'Loading'
