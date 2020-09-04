@@ -6,8 +6,7 @@ const express = require('express')
 const port = process.env.PORT || 4000
 const app = express()
 const dev = app.get('env') !== 'production'
-const { createProxyMiddleware } = require('http-proxy-middleware');
-  
+
 if(!dev) {
   app.disable('x-powered-by')
   app.use(compression())
@@ -17,13 +16,6 @@ if(!dev) {
   app.get('*',(req,res) => {
     res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
   })
-  app.use(
-    '/',
-    createProxyMiddleware({
-      target: 'http://farmconnect-backend/',
-      changeOrigin: true,
-    })
-  );
 }
 if(dev){
   app.use(morgan('dev'))

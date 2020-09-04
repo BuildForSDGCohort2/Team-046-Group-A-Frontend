@@ -21,7 +21,7 @@ class Login extends Component {
       password: this.state.password
     }
     this.props.match.path==='/farmer_login'?(
-    axios.post('http://farmconnect-backend/farmer/login', {
+    axios.post('/farmer/login', {
       email: user.email,
       password: user.password
     })
@@ -35,7 +35,7 @@ class Login extends Component {
       console.log(err)
     })
   ):(
-    axios.post('http://farmconnect-backend/consumer/login', {
+    axios.post('/consumer/login', {
       email: user.email,
       password: user.password
     })
