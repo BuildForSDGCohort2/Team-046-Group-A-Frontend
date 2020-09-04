@@ -84,7 +84,7 @@ class signUp extends Component {
          })
        }else{
          this.props.match.path==='/farmer_signUp' ? (
-         axios.post('/farmer/signup',farmer)
+         axios.post('http://farmconnect-backend/farmer/signup',farmer)
           .then(res=>{
             res.data.error ?
             this.setState({status:res.data.error})
@@ -92,7 +92,7 @@ class signUp extends Component {
             this.props.history.push('/farmer_login')
           })
         ) : (
-          axios.post('/consumer/signup',consumer)
+          axios.post('http://farmconnect-backend/consumer/signup',consumer)
            .then(res=>{
              res.data.error ?
              this.setState({status:res.data.error})
